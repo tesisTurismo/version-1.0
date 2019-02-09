@@ -1,0 +1,66 @@
+﻿@model AppTurs.Comun.Models.Lugar_Turistico
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Lugar_Turistico</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.foto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_LugarTuristico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_LugarTuristico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion_LugarTuristico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion_LugarTuristico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sitio_web)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sitio_web)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.latitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.longitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitud)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idLugarTuristico }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

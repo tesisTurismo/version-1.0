@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTurs.Vistas.DetalleRestaurantePage"
+             BindingContext="{Binding Main,Source={StaticResource Localizador}}"
+             Title="Detalle">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BindingContext="{Binding DetalleRestaurante}" Padding="5">
+                
+                <Label Text="{Binding Restaurante.nombre_rest}" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                <Image Source="{Binding ImageSource}"></Image>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" 
+                           Grid.Row="0" 
+                           Text="Descripción"
+                           TextColor="Black" 
+                           FontAttributes="Bold" 
+                           FontSize="17" VerticalOptions="Center"/>
+                    
+                    <Label Grid.Column="1"
+                           Grid.Row="0" 
+                           Text="{Binding Restaurante.descripcion_rest}" 
+                           TextColor="Black" FontSize="17" VerticalOptions="EndAndExpand"/>
+                    
+                    <Label Grid.Column="0"  
+                           Grid.Row="1" 
+                           Text="Sitio Web" 
+                           TextColor="Black" 
+                           FontAttributes="Bold" FontSize="17" VerticalOptions="Center"/>
+                    
+                    <Label Grid.Column="1" 
+                           Grid.Row="1" 
+                           Text="{Binding Restaurante.sitio_web }" 
+                           TextColor="Black" FontSize="17" VerticalOptions="EndAndExpand"/>
+
+                </Grid>
+               
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

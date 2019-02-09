@@ -1,0 +1,54 @@
+﻿@model IEnumerable<AppTurs.Comun.Models.CentroSalud>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    <li>@Html.ActionLink("Sucursales de Centros de Salud", "Index", "Sucursal_CentroSalud")</li>
+</p>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_CentroSalud)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion_CentroSalud)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sitio_web)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.foto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_CentroSalud)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion_CentroSalud)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sitio_web)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idCentroSalud }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idCentroSalud }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idCentroSalud })
+        </td>
+    </tr>
+}
+
+</table>

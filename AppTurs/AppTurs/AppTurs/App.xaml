@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:infra="clr-namespace:AppTurs.Infraestructura"
+             x:Class="AppTurs.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <infra:LocalizadorInstancias x:Key="Localizador"></infra:LocalizadorInstancias>
+
+            <x:String x:Key="UrlAPI">https://apptursapi20190127072132.azurewebsites.net</x:String>
+            <x:String x:Key="UrlPrefix">/api</x:String>
+            <x:String x:Key="UrlRestauranteController">/Restaurantes</x:String>
+        </ResourceDictionary>
+        
+        
+    </Application.Resources>
+</Application>

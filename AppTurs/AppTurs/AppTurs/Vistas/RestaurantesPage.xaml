@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTurs.Vistas.RestaurantesPage"
+             BindingContext="{Binding Main,Source={StaticResource Localizador}}"
+             
+             Title="Restaurantes">
+    
+    <ContentPage.Content>
+        <StackLayout
+            BindingContext="{Binding restaurantes}" Padding="5">
+
+            <SearchBar
+               HeightRequest="35"
+                WidthRequest="35"
+                Placeholder="Buscar Restaurante" 
+                Text="{Binding Filtro}" 
+                SearchCommand="{Binding SearchCommand}">
+   
+            </SearchBar>
+            
+            <ListView ItemsSource="{Binding restaurantes}" IsRefreshing="{Binding IsRefreshing}" RefreshCommand="{Binding RefreshCommand}" IsPullToRefreshEnabled="True" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding DetalleRestaurantesCommand}"/>
+                                </Grid.GestureRecognizers>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Image 
+                                    Grid.Column="0"
+
+                                    Source="{Binding imagenApp}" 
+                                    WidthRequest="100"
+                                    HeightRequest="100">
+                                    
+                                </Image>
+                                <StackLayout Grid.Column="1"  VerticalOptions="Center" >
+                                    <Label  
+                                       FontAttributes="Bold" 
+                                        TextColor="Black"
+                                       Text="{Binding nombre_rest}"
+                                       FontSize="18">
+
+
+                                    </Label>
+                                    <Label  
+                                       FontAttributes="Bold"  
+                                       Text="{Binding descripcion_rest}"
+                                       FontSize="Medium" >
+                                        
+
+                                    </Label>
+                                </StackLayout>
+                                <Image Grid.Column="2" Source="ic_chevron_right"
+                                       VerticalOptions="Center">
+                                        
+                                </Image>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

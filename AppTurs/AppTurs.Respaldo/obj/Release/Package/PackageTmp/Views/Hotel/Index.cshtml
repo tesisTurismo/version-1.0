@@ -1,0 +1,54 @@
+﻿@model IEnumerable<AppTurs.Comun.Models.Hotel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    <li>@Html.ActionLink("Sucursales de Hotel", "Index", "Sucursal_hotel")</li>
+</p>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_hotel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion_hotel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sitio_web)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.foto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_hotel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion_hotel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sitio_web)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idHotel }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idHotel }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idHotel })
+        </td>
+    </tr>
+}
+
+</table>

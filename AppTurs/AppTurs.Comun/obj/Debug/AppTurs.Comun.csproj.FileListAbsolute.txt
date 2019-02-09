@@ -1,0 +1,10 @@
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\bin\Debug\AppTurs.Comun.dll
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\bin\Debug\AppTurs.Comun.pdb
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\obj\Debug\AppTurs.Comun.csprojAssemblyReference.cache
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\obj\Debug\AppTurs.Comun.csproj.CoreCompileInputs.cache
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\obj\Debug\AppTurs.Comun.csproj.CopyComplete
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\obj\Debug\AppTurs.Comun.dll
+C:\Users\Mirea\source\repos\AppTurs\AppTurs.Comun\obj\Debug\AppTurs.Comun.pdb

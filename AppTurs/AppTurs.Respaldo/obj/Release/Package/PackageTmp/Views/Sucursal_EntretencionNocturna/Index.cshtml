@@ -1,0 +1,63 @@
+﻿@model IEnumerable<AppTurs.Comun.Models.Sucursal_EntretencionNocturna>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.idEntretNoc.nombre_EntretencionNoct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.calle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.latitud)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.longitud)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idEntretNoc.nombre_EntretencionNoct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.calle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.latitud)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.longitud)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idSucursalEntretencionNoct }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idSucursalEntretencionNoct }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idSucursalEntretencionNoct })
+        </td>
+    </tr>
+}
+
+</table>

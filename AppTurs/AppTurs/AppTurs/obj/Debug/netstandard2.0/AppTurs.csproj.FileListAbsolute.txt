@@ -1,0 +1,16 @@
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\bin\Debug\netstandard2.0\AppTurs.deps.json
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\bin\Debug\netstandard2.0\AppTurs.dll
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\AppTurs.csprojAssemblyReference.cache
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\AppTurs.csproj.CoreCompileInputs.cache
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\AppTurs.AssemblyInfoInputs.cache
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\AppTurs.AssemblyInfo.cs
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\bin\Debug\netstandard2.0\AppTurs.pdb
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\AppTurs.dll
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\AppTurs.pdb
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\bin\Debug\netstandard2.0\AppTurs.Comun.dll
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\bin\Debug\netstandard2.0\AppTurs.Comun.pdb
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\Vistas\RestaurantesPage.xaml.g.cs
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\AppTurs.csproj.CopyComplete
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Mirea\source\repos\AppTurs\AppTurs\AppTurs\obj\Debug\netstandard2.0\Vistas\DetalleRestaurantePage.xaml.g.cs

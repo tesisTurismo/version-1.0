@@ -1,0 +1,54 @@
+﻿@model IEnumerable<AppTurs.Comun.Models.EntretencionNocturna>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+    <li>@Html.ActionLink("Sucursales de Entretencion Nocturna", "Index", "Sucursal_EntretencionNocturna")</li>
+
+</p>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_EntretencionNoct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion_EntretencionNoct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sitio_web)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.foto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_EntretencionNoct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion_EntretencionNoct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sitio_web)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idEntretencionNoct }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idEntretencionNoct }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idEntretencionNoct })
+        </td>
+    </tr>
+}
+
+</table>
